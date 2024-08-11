@@ -13,6 +13,7 @@
         <livewire:header />
         <livewire:hero-section />
         <livewire:product-section />
+        <livewire:footer />
         {{-- <livewire:product-section /> --}}
     </body>
 </html>
