@@ -1,4 +1,4 @@
-<div class="bg-gray-100 shadow-sm rounded-lg hover:border border-blue-400 p-1">
+<div class="bg-gray-100 shadow-sm rounded-lg hover:border border-red-400 p-1">
     <a href="/product/details">
         <div>
             <img src="{{ asset('images/1.png') }}" alt="produto-image" class="rounded object-cover" height="400px"
@@ -17,7 +17,7 @@
             </div>
 
             <div
-                class="flex gap-2 justify-center w-full rounded bg-blue-600 px-12 py-2 text-sm font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto">
+                class="flex gap-2 justify-center w-full rounded bg-red-600 px-12 py-2 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round"

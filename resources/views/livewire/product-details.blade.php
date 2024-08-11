@@ -18,7 +18,7 @@
             <div class="my-3">
 
                 <a href="{{ auth()->check() ? '/add/to/cart' : '/auth/login' }}"
-                    class="flex gap-2 justify-center w-full rounded bg-blue-600 px-12 py-2 text-sm font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto">
+                    class="flex gap-2 justify-center w-full rounded bg-red-600 px-12 py-2 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto">
                     Comprar
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
