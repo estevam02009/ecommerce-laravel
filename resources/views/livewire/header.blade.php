@@ -13,19 +13,23 @@
             <nav aria-label="Global" class="hidden md:block">
                 <ul class="flex items-center gap-6 text-sm">
                     <li>
-                        <a class="text-gray-500 transition {{ Request::is('/') ? 'text-gray-700 font-bold' : '' }} hover:text-gray-500/75" href="/"> Home </a>
+                        <a class="text-gray-500 transition {{ Request::is('/') ? 'text-gray-700 font-bold' : '' }} hover:text-gray-500/75"
+                            href="/"> Home </a>
                     </li>
 
                     <li>
-                        <a class="text-gray-500 transition hover:text-gray-500/75 {{ Request::is('all/products') ? 'text-gray-700 font-bold' : '' }}" href="#"> Explorar mais </a>
+                        <a class="text-gray-500 transition hover:text-gray-500/75 {{ Request::is('all/products') ? 'text-gray-700 font-bold' : '' }}"
+                            href="#"> Explorar mais </a>
                     </li>
 
                     <li>
-                        <a class="text-gray-500 transition hover:text-gray-500/75 {{ Request::is('about') ? 'text-gray-700 font-bold' : '' }}" href="#"> Sobre </a>
+                        <a class="text-gray-500 transition hover:text-gray-500/75 {{ Request::is('about') ? 'text-gray-700 font-bold' : '' }}"
+                            href="#"> Sobre </a>
                     </li>
 
                     <li>
-                        <a class="text-gray-500 transition hover:text-gray-500/75 {{ Request::is('/contacts') ? 'text-gray-700 font-bold' : '' }}" href="#"> Contatos </a>
+                        <a class="text-gray-500 transition hover:text-gray-500/75 {{ Request::is('/contacts') ? 'text-gray-700 font-bold' : '' }}"
+                            href="#"> Contatos </a>
                     </li>
                 </ul>
             </nav>
@@ -33,17 +37,26 @@
             <div class="flex items-center gap-4">
                 <div class="sm:flex sm:gap-4">
                     @if (auth()->check())
-                        <livewire:shopping-cart-icon />
-                        <a href="/auth/logout">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 hover:text-red-700">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                        <a href="/cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                             </svg>
                         </a>
-                    @else
-                    <a href="/auth/login" class="block rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-700">
-                        Começar
-                    </a>
+                        <a href="/auth/logout">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                            </svg>
 
+                        </a>
+                    @else
+                        <a href="/auth/login"
+                            class="block rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-700">
+                            Comprar Agora
+                        </a>
                     @endif
                 </div>
 
